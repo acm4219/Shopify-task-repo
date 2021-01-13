@@ -1,9 +1,12 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import SearchBar from "../components/SearchBar"
 function Home() {
     return (    
         <div>
-            <Navbar />
+            
+            <div className="container">
+                <SearchBar />
+            </div>
         </div>
 
     )

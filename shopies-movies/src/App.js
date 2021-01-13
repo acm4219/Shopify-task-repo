@@ -4,13 +4,23 @@ import {
   Switch, 
   Route,
 } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import Home from "./views/Home"
+import Nominations from "./views/Nominations"
 
 function App() {
   return (
     <div>
       <Router>
-          <Home />
+        <Navbar />
+        <Switch>
+        <Route exact path="/">
+           <Home />
+        </Route>
+        <Route path="nominations">
+         <Nominations />
+        </Route>
+        </Switch>
 
       </Router>
     </div>
