@@ -4,11 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <title>The Shoppies</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+           
+        <span class="navbar-brand">The Shoppies!</span>
+    </nav>
+    <div class="container">
+       
+        
+        <div class="row card">
+        <form class="col-8">
+            <label for="movieSearch" class="form-label">Search for your favorite Movies</label>
+            <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+            <button id="search-movie" class="btn btn-primary"type="submit" value="Movie Search">Search</button>
+        </form>   
+        </div>
+        <br>
+        <div class="row justify-content-around">
+            <div id="results" class="card col-5">
+                <div class="card-title">Results:</div>
+                <div id="movie-titles"></div>
+            </div>
+            <div class="card col-5">
+                <div class="card-title">Nominations:</div>
+                <div id="nominations"></div>
+            </div>
+        </div>
+    </div>
     
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
